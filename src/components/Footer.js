@@ -9,21 +9,21 @@ const Footer = () => {
       </div>
       <div className="footer-right">
         <a
-          href="https://www.linkedin.com/in/abhishek-kumar-4a1b3b1b0/"
+          href="https://www.linkedin.com/in/prem-kr/"
           target="_blank"
           rel="noreferrer"
         >
           Linkedin
         </a>
         <a
-          href="https://www.linkedin.com/in/abhishek-kumar-4a1b3b1b0/"
+          href="https://www.twitter.com/premstwt/"
           target="_blank"
           rel="noreferrer"
         >
           Twitter
         </a>
         <a
-          href="https://www.linkedin.com/in/abhishek-kumar-4a1b3b1b0/"
+          href="https://www.youtube.com/rprem/"
           target="_blank"
           rel="noreferrer"
         >

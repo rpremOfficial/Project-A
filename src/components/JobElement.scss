@@ -1,6 +1,6 @@
 // Variables
 $color-primary: #4682A9;
-$color-secondary: #91C8E4;
+$color-secondary: #4e4e4e;
 
 $color-text: #4e4e4e;
 $color-text-secondary: #000;
@@ -18,6 +18,16 @@ $color-bg: #F6F4EB;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    .job-element-left, .job-element-right{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+    }
 
     .job-element-left{
         width: calc(10% - 10px);
@@ -46,19 +56,23 @@ $color-bg: #F6F4EB;
         width: calc(20% - 10px);
         text-align: right;
         border-radius: 0 10px 10px 0;
-    }
 
-    .job-element-left, .job-element-right{
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        a{
+            text-decoration: none;
+            font-size: 24px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
 
-        background-color: #fff;
+            color: $color-primary;
+        }
+
+        a:hover{
+            font-weight: 500;
+        }
     }
 
     border : 4px solid #fff;
     background-color: $color-bg;
     border-radius: 15px;
+    box-shadow: 0px 0px 4px 0px rgba(31, 31, 31, 0.05);
 }

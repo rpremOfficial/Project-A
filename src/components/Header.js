@@ -1,7 +1,26 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Header.scss";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  function NewsPage() {
+    navigate("/news");
+  }
+
+  function Home() {
+    navigate("/");
+  }
+
+  function AboutUS() {
+    navigate("/about");
+  }
+
+  function VisitGithub() {
+    window.open("https://github.com/rpremOfficial/Project-A", "_blank");
+  }
+
   return (
     <>
       <div className="header">
@@ -14,14 +33,14 @@ const Header = () => {
       </div>
       <div className="nav">
         <ul className="ul-left">
-          <li>Home</li>
-          <li>Blog</li>
-          <li>About</li>
+          <li onClick={Home}>Home</li>
+          <li onClick={NewsPage}>Hiring News</li>
+          <li onClick={AboutUS}>About</li>
         </ul>
 
         <ul className="ul-right">
           <li>FAQ</li>
-          <li>Contact</li>
+          <li onClick={VisitGithub}>GitHub</li>
         </ul>
       </div>
     </>
