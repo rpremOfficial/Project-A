@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import "./News.scss";
 import Footer from "../components/Footer";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const today = new Date();
 const date = today.toISOString().slice(0, 10);
@@ -73,18 +74,21 @@ const News = () => {
                 return (
                   <div className="news-element">
                     <div className="news-img">
-                      <img src={item.urlToImage} alt="Image" />
+                      <img src={item.urlToImage} alt="article" />
                     </div>
                     <div className="news-details">
                       <h3>{item.title}</h3>
-                      <p>{item.description}</p>
+                      <p>
+                        {item.description.slice(0, 200)}
+                        {item.description.length > 200 ? "..." : ""}
+                      </p>
                       <h5>
                         Author: <span>{item.author}</span> | Published:{" "}
                         <span>{item.publishedAt.slice(0, 10)}</span>
                       </h5>
-                      <a href={item.url} target="_blank">
+                      <Link to={item.url} target="_blank">
                         Read More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 );

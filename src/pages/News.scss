@@ -33,13 +33,13 @@ $color-bg: #F6F4EB;
 
     .news-element{
         width: 100%;
-        height: 100%;
+        height: 30vh;
 
         margin: 10px 0;
 
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
 
         border : 4px solid #fff;
@@ -49,9 +49,9 @@ $color-bg: #F6F4EB;
 
 
         .news-img{
-            width: calc(25% - 20px);
+            width: calc(30% - 20px);
             height: 100%;
-            border-radius: 10px;
+            border-radius: 10px 0 0 10px;
 
             display: flex;
             flex-direction: column;
@@ -63,7 +63,7 @@ $color-bg: #F6F4EB;
                 height: 100%;
                 
                 object-fit: cover;
-                border-radius: 10px;
+                border-radius: 10px 0 0 10px;
             }
         }
 
