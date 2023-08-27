@@ -18,12 +18,14 @@ const LandingPage = () => {
   const NextPageHandler = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
+      window.scrollTo(0, 0);
     }
   };
 
   const PrevPageHandler = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
+      window.scrollTo(0, 0);
     }
   };
 
