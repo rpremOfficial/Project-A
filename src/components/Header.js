@@ -25,7 +25,7 @@ const Header = () => {
     <>
       <div className="header">
         <div className="logo-div">
-          <h1>Project - A</h1>
+          <h1>Preplacement</h1>
         </div>
         <div className="button-div">
           <button className="btn-primary">Join now</button>
@@ -33,8 +33,11 @@ const Header = () => {
       </div>
       <div className="nav">
         <ul className="ul-left">
-          <li onClick={Home}>Home</li>
+          <li onClick={Home}>Jobs</li>
           <li onClick={NewsPage}>Hiring News</li>
+          <li>Blog/Experinces</li>
+          <li>Resources</li>
+          <li>Resume</li>
           <li onClick={AboutUS}>About</li>
         </ul>
 

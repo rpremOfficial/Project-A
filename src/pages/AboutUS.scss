@@ -12,4 +12,42 @@ $color-bg: #F6F4EB;
     width: 96%;
     height: 100%;
     margin: 0 auto;
+
+    .about-container{
+        width: 400px;
+        height: 600px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        border-radius: 15px;
+        background-color: #fff;
+
+        .image-div{
+            width: 94%;
+            height: calc(50% - 10px);
+            margin: 0 auto;
+
+            border-radius: 10px;
+
+            img{
+                width: 100%;
+                height: 100%;
+
+                border-radius: 10px;
+            }
+        }
+
+        .content-div{
+            width: 94%;
+            height: calc(30% - 10px);
+        }
+
+        .button-div{
+            width: 94%;
+            height: calc(20% - 10px);
+        }
+    }
 }

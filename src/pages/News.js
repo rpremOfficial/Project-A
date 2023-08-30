@@ -30,7 +30,7 @@ const News = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios.get(url).then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         setNews(response.data.articles);
       });
       setLoading(false);
@@ -121,3 +121,21 @@ const News = () => {
 };
 
 export default News;
+
+// ----- Temp Code -----
+
+// await axios.post(url, {
+//   headers: {
+//     "Content-Type": "application/json",
+//     "Access-Control-Allow-Origin": "*",
+//   },
+//   data: {
+//     q: "hiring",
+//     from: date,
+//     to: yesterDay,
+//     sortBy: "popularity",
+//     apiKey: "6adb874cd20c461d8a3a9b38128d8f14",
+//   }
+// }).then((res) => {
+//   console.log(res.data);
+// });
