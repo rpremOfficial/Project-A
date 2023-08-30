@@ -43,6 +43,7 @@ const LandingPage = () => {
                   title={job.title}
                   batch={job.batch}
                   ctc={job.ctc}
+                  logo={job.logo}
                   link={job.link}
                 />
               );

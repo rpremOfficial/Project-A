@@ -3,6 +3,8 @@ import "./JobElement.scss";
 
 const JobElement = (props) => {
   const { id, title, batch, ctc, logo, link } = props;
+
+  console.log({ logo });
   return (
     <>
       <div className="job-element" key={id}>
