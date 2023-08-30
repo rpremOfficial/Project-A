@@ -30,7 +30,7 @@ const News = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios.get(url).then((response) => {
-        // console.log(response.data);
+        console.log(response.data);
         setNews(response.data.articles);
       });
       setLoading(false);

@@ -38,10 +38,10 @@ const Header = () => {
           <li>Blog/Experinces</li>
           <li>Resources</li>
           <li>Resume</li>
-          <li onClick={AboutUS}>About</li>
         </ul>
 
         <ul className="ul-right">
+          <li onClick={AboutUS}>About Us</li>
           <li>FAQ</li>
           <li onClick={VisitGithub}>GitHub</li>
         </ul>
