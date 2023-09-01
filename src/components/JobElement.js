@@ -9,7 +9,7 @@ const JobElement = (props) => {
     <>
       <div className="job-element" key={id}>
         <div className="job-element-left">
-          <h3>{id}</h3>
+          <h3>{id}.</h3>
         </div>
         <div className="job-element-details">
           <div className="about-role">

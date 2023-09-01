@@ -1,11 +1,13 @@
 // Variables
-$color-primary: #4682A9;
+$color-primary: #2870EA;
 $color-secondary: #4e4e4e;
 
 $color-text: #4e4e4e;
 $color-text-secondary: #000;
 
-$color-bg: #F6F4EB;
+$color-bg: rgba(255,255,255,0.7);
+
+$background-primary: linear-gradient(130deg, #2870EA 20%, #1B4AEF 77.5%);
 
 
 .AboutUS{
@@ -14,40 +16,42 @@ $color-bg: #F6F4EB;
     margin: 0 auto;
 
     .about-container{
-        width: 400px;
-        height: 600px;
+        width: 100%;
+        height: 100vh;
 
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
 
         border-radius: 15px;
-        background-color: #fff;
+        border: 4px solid #fff;
+        background-color: $color-bg;
 
         .image-div{
-            width: 94%;
-            height: calc(50% - 10px);
-            margin: 0 auto;
+            width: 100%;
+            height: calc(40% - 10px);
+            margin: 0px auto;
 
-            border-radius: 10px;
+            border-radius: 10px 10px 0 0;
 
             img{
                 width: 100%;
                 height: 100%;
 
-                border-radius: 10px;
+                border-radius: 10px 10px 0 0;
+                object-fit: cover;
             }
         }
 
         .content-div{
             width: 94%;
-            height: calc(30% - 10px);
+            height: calc(50% - 10px);
         }
 
         .button-div{
             width: 94%;
-            height: calc(20% - 10px);
+            height: calc(10% - 10px);
         }
     }
 }

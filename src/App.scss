@@ -47,4 +47,9 @@ $background-primary: linear-gradient(130deg, #2870EA 20%, #1B4AEF 77.5%);
   height: 100%;
 
   margin: 50px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -70,8 +70,8 @@ $background-primary: linear-gradient(130deg, #2870EA 20%, #1B4AEF 77.5%);
             cursor: pointer;
 
             &:hover{
-                font-weight: 500;
                 color: $color-primary;
+                transition: 0.3s ease-in-out;
             }
         }
     }

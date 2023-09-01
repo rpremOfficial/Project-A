@@ -35,7 +35,7 @@ const Header = () => {
         <ul className="ul-left">
           <li onClick={Home}>Jobs</li>
           <li onClick={NewsPage}>Hiring News</li>
-          <li>Blog/Experinces</li>
+          <li>Blog/Experiences</li>
           <li>Resources</li>
           <li>Resume</li>
         </ul>

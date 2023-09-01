@@ -23,6 +23,10 @@ console.log("Today: " + date);
 console.log("Prev Date: " + yesterDay);
 
 const News = () => {
+  useEffect(() => {
+    document.title = "Hiring News | Project - A";
+  }, []);
+
   const [news, setNews] = useState([]);
 
   const [loading, setLoading] = useState(true);

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import "./AboutUS.scss";
 import Footer from "../components/Footer";
 
 const AboutUS = () => {
+  useEffect(() => {
+    document.title = "About | Project - A";
+  }, []);
+
   return (
     <>
       <div className="AboutUS">
@@ -11,7 +15,10 @@ const AboutUS = () => {
         <div className="mid-div">
           <div className="about-container">
             <div className="image-div">
-              <img src="https://wallpapercave.com/wp/wp2722874.jpg"></img>
+              <img
+                src="https://wallpapercave.com/wp/wp2722874.jpg"
+                alt="Cover banner"
+              ></img>
             </div>
             <div className="content-div">
               <h1>Headline</h1>
