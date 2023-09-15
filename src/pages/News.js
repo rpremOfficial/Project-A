@@ -24,7 +24,7 @@ console.log("Prev Date: " + yesterDay);
 
 const News = () => {
   useEffect(() => {
-    document.title = "Hiring News | Project - A";
+    document.title = "Blog/Articles | Project - A";
   }, []);
 
   const [news, setNews] = useState([]);
@@ -72,7 +72,7 @@ const News = () => {
         <div className="mid-div">
           <div className="news-container">
             {loading ? (
-              <h1>Loading...</h1>
+              <h1>Coming Soon...</h1>
             ) : (
               currentData?.map((item) => {
                 return (

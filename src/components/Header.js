@@ -34,8 +34,8 @@ const Header = () => {
       <div className="nav">
         <ul className="ul-left">
           <li onClick={Home}>Jobs</li>
-          <li onClick={NewsPage}>Hiring News</li>
-          <li>Blog/Experiences</li>
+          <li onClick={NewsPage}>Blog/Articles</li>
+          <li>Discussion</li>
           <li>Resources</li>
           <li>Resume</li>
         </ul>
