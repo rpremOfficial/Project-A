@@ -12,12 +12,12 @@ const backDate = new Date(today);
 backDate.setDate(backDate.getDate() - 7);
 const yesterDay = backDate.toISOString().slice(0, 10);
 
-const url =
-  "https://newsapi.org/v2/everything?q=hiring&from=" +
-  date +
-  "&to=" +
-  yesterDay +
-  "&sortBy=popularity&apiKey=6adb874cd20c461d8a3a9b38128d8f14";
+// const url =
+//   "https://newsapi.org/v2/everything?q=hiring&from=" +
+//   date +
+//   "&to=" +
+//   yesterDay +
+//   "&sortBy=popularity&apiKey=6adb874cd20c461d8a3a9b38128d8f14";
 
 console.log("Today: " + date);
 console.log("Prev Date: " + yesterDay);
@@ -31,16 +31,16 @@ const News = () => {
 
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      await axios.get(url).then((response) => {
-        console.log(response.data);
-        setNews(response.data.articles);
-      });
-      setLoading(false);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     await axios.get(url).then((response) => {
+  //       console.log(response.data);
+  //       setNews(response.data.articles);
+  //     });
+  //     setLoading(false);
+  //   };
+  //   fetchData();
+  // }, []);
 
   const totalPages = Math.ceil(news.length / 10);
 
@@ -76,25 +76,26 @@ const News = () => {
             ) : (
               currentData?.map((item) => {
                 return (
-                  <div className="news-element">
-                    <div className="news-img">
-                      <img src={item.urlToImage} alt="article" />
-                    </div>
-                    <div className="news-details">
-                      <h3>{item.title}</h3>
-                      <p>
-                        {item.description.slice(0, 200)}
-                        {item.description.length > 200 ? "..." : ""}
-                      </p>
-                      <h5>
-                        Author: <span>{item.author}</span> | Published:{" "}
-                        <span>{item.publishedAt.slice(0, 10)}</span>
-                      </h5>
-                      <Link to={item.url} target="_blank">
-                        Read More
-                      </Link>
-                    </div>
-                  </div>
+                  <h1>Coming Soon...</h1>
+                  // <div className="news-element">
+                  //   <div className="news-img">
+                  //     <img src={item.urlToImage} alt="article" />
+                  //   </div>
+                  //   <div className="news-details">
+                  //     <h3>{item.title}</h3>
+                  //     <p>
+                  //       {item.description.slice(0, 200)}
+                  //       {item.description.length > 200 ? "..." : ""}
+                  //     </p>
+                  //     <h5>
+                  //       Author: <span>{item.author}</span> | Published:{" "}
+                  //       <span>{item.publishedAt.slice(0, 10)}</span>
+                  //     </h5>
+                  //     <Link to={item.url} target="_blank">
+                  //       Read More
+                  //     </Link>
+                  //   </div>
+                  // </div>
                 );
               })
             )}
